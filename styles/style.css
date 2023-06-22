@@ -1,0 +1,25 @@
+.nav {
+    flex-direction: row-reverse;
+}
+.nav-underline .nav-link {
+    color: #2938FA;
+}
+.nav-underline .nav-link:hover {
+    color: #fa29cd;
+}
+
+.head-img {
+    width: 100%;
+}
+
+.percent-bar {
+    height: 15px;
+    background: #e8e8e8;
+    border-radius: 5px;
+}
+
+.progress-percent {
+    height: 15px;
+    background: #66cb8c;
+    border-radius: 5px;
+}
