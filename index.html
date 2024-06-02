@@ -6,44 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nora Aguirre</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="https://www.noraprogramadora.com/wp-content/uploads/2020/06/cropped-cropped-IMG_20170219_194544-e1592100658919.jpg"  width="30" height="24">
+    <nav class="menu-vertical">
+        <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul id="menu" class="menu">
+            <li>
+                <span>
+                    <img src="https://www.noraprogramadora.com/wp-content/uploads/2024/06/425924474_7376865542344422_9152090973102628910_n.jpg">
+                </span>
+            </li>
+            <li>
+                <h2>Nora Aguirre</h2>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Code skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Education background</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Another important skils</a>
+            </li>
+            <li class="social-icons">
+                <a class="rs-icon" href="https://github.com" target="_blank" class="icon-button github">
+                    <img  src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Code skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Education background</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Another important skils</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-          </nav>
-    </header>
-
+                <a class="rs-icon" href="https://linkedin.com" target="_blank" class="icon-button linkedin">
+                    <img  src="https://icones.pro/wp-content/uploads/2021/03/icone-linkedin-ronde-grise.png">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
     <div class="container">
         <div class="row">
             <div class="col">
@@ -257,6 +266,7 @@
     </div>
 
     <footer></footer>
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

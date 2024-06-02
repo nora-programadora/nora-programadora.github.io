@@ -1,25 +1,86 @@
-.nav {
-    flex-direction: row-reverse;
-}
-.nav-underline .nav-link {
-    color: #2938FA;
-}
-.nav-underline .nav-link:hover {
-    color: #fa29cd;
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.head-img {
-    width: 100%;
+.menu-vertical {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  overflow-x: hidden;
+  padding-top: 55px;
+  transition: transform 0.3s ease;
 }
 
-.percent-bar {
-    height: 15px;
-    background: #e8e8e8;
-    border-radius: 5px;
+.menu-vertical .menu-toggle {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.progress-percent {
-    height: 15px;
-    background: #66cb8c;
-    border-radius: 5px;
+.menu-vertical ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-vertical ul li {
+  padding: 12px 20px;
+  margin: 5px;
+}
+
+.menu-vertical ul li h2 {
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+.menu-vertical ul li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-vertical ul li img {
+  display: flex;
+  margin: auto;
+  border-radius: 50rem;
+  width: 170px;
+}
+
+.menu-vertical ul li a.rs-icon {
+  width: 20px;
+  display: inline-block;
+}
+
+.menu-vertical ul li a.rs-icon img {
+  width: 20px;
+}
+
+.menu-vertical ul li span {
+  background-color: #75506e !important;
+  padding: 0.5rem !important;
+  display: inline-block !important;
+  border-radius: 50rem;
+}
+
+.menu-vertical ul li a:hover {
+  color: plum;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
 }

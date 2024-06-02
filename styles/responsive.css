@@ -1,0 +1,29 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-vertical {
+    width: 100%;
+    height: auto;
+    /* transform: translateX(-100%);
+    transition: transform 0.3s ease; */
+  }
+
+  .menu-vertical .menu-toggle {
+    display: block;
+  }
+
+  .menu-vertical ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .menu-vertical ul li {
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .menu-vertical ul.show {
+    display: flex;
+  }
+}
