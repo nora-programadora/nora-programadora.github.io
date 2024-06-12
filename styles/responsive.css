@@ -28,4 +28,8 @@
   .menu-vertical ul.show {
     display: flex;
   }
+
+  .menu-vertical ul li img {
+    width: 160px;
+  }
 }
