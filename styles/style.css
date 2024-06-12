@@ -6,6 +6,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.favicon {
+  width: 84px; /* Ancho deseado del icono */
+  height: 64px; /* Altura deseada del icono */
+}
+
 /*Menu content*/
 header {
   display: flex;
@@ -53,6 +58,9 @@ header {
 }
 
 .menu-vertical ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px 20px;
   margin: 5px;
 }
@@ -74,7 +82,7 @@ header {
   display: flex;
   margin: auto;
   border-radius: 50rem;
-  width: 80%;
+  width: 170px;
 }
 
 .menu-vertical ul li a.rs-icon {
@@ -99,7 +107,8 @@ header {
 
 .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10px;
   padding: 8px 0;
 }
 
@@ -143,22 +152,23 @@ header {
   margin-bottom: 2rem;
 }
 
-/*Title text effect*/
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  animation: float 2s infinite;
+  z-index: 2;
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+.scroll-down:hover {
+  color: plum;
 }
 
+/* Dynamix title text */
 #dynamic-text {
   display: flex;
   align-items: center;
@@ -176,4 +186,70 @@ header {
 
 .typing {
   animation: typing 2s steps(30, end), blink 0.7s step-end infinite;
+}
+
+/* About section */
+.about-section {
+  background-color: #5c5c5c; /* Dark background */
+  color: white;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 800px;
+  text-align: left;
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-text p {
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #ff6347; /* Color for Nora Aguirre */
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.detail-item {
+  margin: 10px 0;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #333;
 }
