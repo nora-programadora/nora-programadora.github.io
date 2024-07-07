@@ -198,6 +198,35 @@ header {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  position: relative;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  z-index: 1;
+}
+
+.title::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 3em;
+  z-index: -1;
+  white-space: nowrap;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 5px;
+  background-color: pink;
+  margin: 0 auto;
+  margin-top: 5px;
 }
 
 .container {
@@ -226,7 +255,7 @@ header {
 }
 
 .highlight {
-  color: #ff6347; /* Color for Nora Aguirre */
+  color: #ff6347;
 }
 
 .details {
@@ -236,7 +265,7 @@ header {
 }
 
 .detail-item {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .btn {
@@ -252,4 +281,20 @@ header {
 .btn:hover {
   background-color: white;
   color: #333;
+}
+
+.btn-generic-color {
+  background-color: plum;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1em;
+  display: flex;
+  margin: auto;
+}
+
+.btn-generic-color:hover {
+  background-color: rgb(206, 109, 206);
 }
