@@ -38,6 +38,12 @@
     font-size: 2rem;
   }
 
+  .card-section {
+    .masonry {
+      column-count: 1;
+    }
+  }
+
   .title::before {
     font-size: 2em;
   }

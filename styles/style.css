@@ -190,7 +190,20 @@ header {
 
 /* About section */
 .about-section {
-  background-color: #5c5c5c; /* Dark background */
+  background-color: #5c5c5c;
+  color: white;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+}
+
+.resume {
+  background-color: #212529 !important;
   color: white;
   padding: 60px 20px;
   display: flex;
@@ -234,6 +247,46 @@ header {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  h3 {
+    text-align: justify;
+    margin-bottom: 1em;
+  }
+}
+
+.card-section {
+  width: 100%;
+  padding: 3em;
+
+  .masonry {
+    column-count: 2; /* Número de columnas */
+    column-gap: 1rem; /* Espacio entre columnas */
+
+    .card {
+      border: 1px solid #111418;
+      break-inside: avoid; /* Evitar que las cards se rompan entre columnas */
+      margin-bottom: 1rem;
+    }
+
+    .card-body {
+      background-color: #111418 !important;
+    }
+
+    h5,
+    h6,
+    p {
+      text-align: left;
+    }
+
+    h5,
+    .date {
+      color: pink;
+    }
+
+    h6,
+    p {
+      color: white;
+    }
+  }
 }
 
 .about-content {
