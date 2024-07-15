@@ -4,6 +4,10 @@
     margin-left: 0;
   }
 
+  footer {
+    margin-left: 0;
+  }
+
   .menu-vertical {
     width: 100%;
     height: auto;
@@ -42,6 +46,9 @@
     .masonry {
       column-count: 1;
     }
+    .projects {
+      column-count: 1;
+    }
   }
 
   .title::before {
@@ -62,5 +69,9 @@
 
   .about-text p {
     margin: 10px auto;
+  }
+
+  .contact-form-container {
+    width: 80%;
   }
 }
