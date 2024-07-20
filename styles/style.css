@@ -1,4 +1,7 @@
-/* styles.css */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -422,30 +425,10 @@ header {
   flex-direction: column;
   position: relative;
   min-height: 100vh;
-}
 
-.github-card {
-  width: 100%;
-  max-width: 800px;
-  background: #fff;
-  color: #333;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.github-card-title {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-}
-
-.github-card-body {
-  text-align: left;
-}
-
-.github-card-body img {
-  width: 100%;
-  border-radius: 8px;
+  img {
+    max-width: 80%;
+  }
 }
 
 /* Contact form*/
@@ -487,7 +470,6 @@ header {
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 100%;
-  margin: 1em;
 }
 
 .contact-form-container textarea {
