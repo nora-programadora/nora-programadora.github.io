@@ -105,7 +105,7 @@ header {
 }
 
 .menu-vertical ul li a:hover {
-  color: #C0392B;
+  color: #6D4A6B;
 }
 
 .social-icons {
@@ -168,7 +168,7 @@ header {
 }
 
 .scroll-down:hover {
-  color: #C0392B;
+  color: #6D4A6B;
 }
 
 /* Dynamix title text */
@@ -241,7 +241,7 @@ header {
   display: block;
   width: 50%;
   height: 5px;
-  background-color: #C0392B;
+  background-color: #6D4A6B;
   margin: 0 auto;
   margin-top: 5px;
 }
@@ -283,7 +283,7 @@ header {
 
     h5,
     .date {
-      color: #C0392B;
+      color: #6D4A6B;
     }
 
     h6,
@@ -314,12 +314,12 @@ header {
     }
 
     progress::-webkit-progress-value {
-      background-color: #C0392B;
+      background-color: #6D4A6B;
       border-radius: 10px 0 0 10px;
     }
 
     progress::-moz-progress-bar {
-      background-color: #C0392B;
+      background-color: #6D4A6B;
       border-radius: 10px 0 0 10px;
     }
   }
@@ -339,11 +339,11 @@ header {
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s;
       a.btn-generic {
-        background-color: #C0392B;
+        background-color: #6D4A6B;
         color: white;
       }
       a.btn-generic:hover {
-        background-color: #A93226;
+        background-color: #5A3A5A;
         color: white;
       }
       a.btn-secondary {
@@ -383,7 +383,7 @@ header {
 }
 
 .highlight {
-  color: #C0392B;
+  color: #6D4A6B;
 }
 
 .details {
@@ -412,7 +412,7 @@ header {
 }
 
 .btn-generic-color {
-  background-color: #C0392B;
+  background-color: #6D4A6B;
   color: white;
   border-radius: 50px;
   text-decoration: none;
@@ -424,7 +424,7 @@ header {
 }
 
 .btn-generic-color:hover {
-  background-color: #A93226;
+  background-color: #5A3A5A;
 }
 
 /* GitHub Widget */
